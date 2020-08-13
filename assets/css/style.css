@@ -174,6 +174,15 @@ section.landing .container a.button {
   padding: 20px 25px;
   font-family: "Poppins", sans-serif;
   border-radius: 2px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+section.landing .container a.button:hover {
+  transform: translateY(-2px);
+  -webkit-box-shadow: 1px 3px 5px 1px rgba(66, 66, 66, 0.28);
+  -moz-box-shadow: 1px 3px 5px 1px rgba(66, 66, 66, 0.28);
+  box-shadow: 1px 3px 5px 1px rgba(66, 66, 66, 0.28);
 }
 
 @media (max-width: 500px) {
@@ -181,6 +190,49 @@ section.landing .container a.button {
     padding: 10px 15px;
     font-size: 0.7em;
   }
+}
+
+/* Works */
+section.works {
+  background-color: rgb(238, 238, 238);
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+section.works h2 {
+  text-align: center;
+  font-size: 2.3em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+section.works .parts {
+  display: flex;
+  margin: 50px 50px;
+}
+
+section.works .parts .part {
+  margin: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+
+section.works .parts .part img {
+  width: 160px;
+  height: 140px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  section.works .parts {
+    flex-direction: column;
+  }
+}
+
+section.works .parts .part img:hover {
+  transform: scale(1.1);
 }
 
 /* Testimonial */
@@ -194,7 +246,6 @@ section.testimonial h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-align: center;
-  margin-top: 50px;
   padding-top: 100px;
 }
 
@@ -254,6 +305,9 @@ section.testimonial .slide-next {
 }
 
 /* About */
+.about {
+  padding-bottom: 100px;
+}
 .about h2 {
   text-align: center;
   font-size: 2.3em;
@@ -270,7 +324,7 @@ section.testimonial .slide-next {
 }
 
 @media (max-width: 1000px) {
-  .about .cards{
+  .about .cards {
     flex-direction: column;
     margin: 30px 1%;
   }
@@ -303,28 +357,28 @@ section.testimonial .slide-next {
 }
 
 /* stats */
-section.stats{
+section.stats {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: rgba(241, 241, 241, 0.452);
 }
 
-section.stats .stat-card{
+section.stats .stat-card {
   display: flex;
   justify-content: center;
 }
 
-@media (max-width: 1000px){
-  section.stats .stat-card{
+@media (max-width: 1000px) {
+  section.stats .stat-card {
     flex-direction: column;
   }
 
-  section.stats .stat-card .card{
+  section.stats .stat-card .card {
     padding: 30px 60px;
   }
 }
 
-section.stats .stat-card .card{
+section.stats .stat-card .card {
   background-color: var(--blue-color);
   font-family: "Poppins", sans-serif;
   margin: 30px;
@@ -333,14 +387,14 @@ section.stats .stat-card .card{
   color: white;
 }
 
-section.stats .stat-card .card h2{
+section.stats .stat-card .card h2 {
   font-size: 3em;
   font-weight: 400;
 }
 
 /* free */
-section.free{
-  background-image: url('./../images/eteki-final-06.jpg');
+section.free {
+  background-image: url("./../images/eteki-final-06.jpg");
   height: 380px;
   display: flex;
   align-items: center;
@@ -348,18 +402,18 @@ section.free{
   flex-direction: column;
 }
 
-section.free h2{
+section.free h2 {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.5em;
   font-weight: 400;
   text-align: center;
 }
 
-section.free button{
+section.free button {
   background: var(--yellow-color);
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1em;
   margin-top: 40px;
@@ -368,47 +422,47 @@ section.free button{
   transition: all 0.5s;
 }
 
-section.free button:hover{
+section.free button:hover {
   transform: translateY(-2px);
--webkit-box-shadow: 1px 3px 5px 1px rgba(66,66,66,0.28);
--moz-box-shadow: 1px 3px 5px 1px rgba(66,66,66,0.28);
-box-shadow: 1px 3px 5px 1px rgba(66,66,66,0.28);
+  -webkit-box-shadow: 1px 3px 5px 1px rgba(66, 66, 66, 0.28);
+  -moz-box-shadow: 1px 3px 5px 1px rgba(66, 66, 66, 0.28);
+  box-shadow: 1px 3px 5px 1px rgba(66, 66, 66, 0.28);
 }
 
 /* Footer */
-footer{
+footer {
   background-color: #343535;
   display: flex;
   justify-content: space-evenly;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-family: "Poppins", sans-serif;
   height: 200px;
   align-items: center;
 }
 
-@media (max-width: 600px){
-  footer{
+@media (max-width: 600px) {
+  footer {
     flex-direction: column;
     height: auto;
     align-items: start;
     padding-left: 20px;
   }
 
-  footer .section3{
+  footer .section3 {
     margin-top: 20px;
     margin-bottom: 5px;
   }
 }
 
-footer .section2 h4{
+footer .section2 h4 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-footer .section2 p{
+footer .section2 p {
   margin-top: 10px;
 }
 
-footer .section3 .socials{
+footer .section3 .socials {
   padding-top: 5px;
 }
