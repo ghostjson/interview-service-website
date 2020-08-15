@@ -10,10 +10,15 @@
 
 /* Global variables */
 :root {
-  --yellow-color: rgb(237, 223, 18);
-  --overlay-color: rgba(6, 41, 94, 0.8);
+  --yellow-color: #343535;
+  --overlay-color: #f58224c0;
   --dark-color: #191d18;
-  --blue-color: #44c8f5;
+  --blue-color: #191d18;
+}
+
+/* Body */
+html, body{
+  scroll-behavior: smooth !important;
 }
 
 /* Header */
@@ -98,7 +103,8 @@ header nav .navigation ul li {
 
 header nav .navigation ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: 600;
 }
 
 /* Landing */
@@ -176,6 +182,8 @@ section.landing .container a.button {
   border-radius: 2px;
   transition: all 0.5s;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 section.landing .container a.button:hover {
@@ -420,6 +428,7 @@ section.free button {
   padding: 15px 30px;
   cursor: pointer;
   transition: all 0.5s;
+  color: white;
 }
 
 section.free button:hover {
